@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c1oqshjft62xx"]
+
+[ext_resource type="Script" uid="uid://de37nkvsjv1k3" path="res://coin.gd" id="1_0t63x"]
+[ext_resource type="Texture2D" uid="uid://bmcx5fr45byq4" path="res://pixel-art-coin-with-dollar-symbol-8-bit-gold-coin-for-retro-games-and-economic-design-png-3298538361.png" id="1_d5gmh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yyjnh"]
+radius = 56.94
+
+[node name="Coin" type="Area2D" unique_id=224457542]
+script = ExtResource("1_0t63x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=663074569]
+position = Vector2(95, 24)
+shape = SubResource("CircleShape2D_yyjnh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=401210195]
+position = Vector2(93.00001, 23)
+scale = Vector2(0.15285715, 0.14214285)
+texture = ExtResource("1_d5gmh")
